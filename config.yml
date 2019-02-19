@@ -1,0 +1,66 @@
+# model
+initializer_gain: 1.0
+shared_embedding: false
+shallow_decoder: false
+
+hidden_size: 512
+filter_size: 4096
+num_hidden_layers: 6
+num_encoder_layers: 0
+num_decoder_layers: 0
+attention_key_channels: 0
+attention_value_channels: 0
+num_heads: 8
+
+layer_preprocess_sequence: n
+layer_postprocess_sequence: da
+norm_epsilon: 0.000001
+layer_prepostprocess_dropout: 0.1
+attention_dropout: 0.1
+relu_dropout: 0.1
+
+bottleneck_kind: em # vq, mog
+bottleneck_bits: 12
+num_compress_steps: 3
+beta: 0.25
+gamma: 1.0
+epsilon: 0.00001
+decay: 0.999
+num_samples: 10
+mask_startup_steps: 50000
+
+
+# training
+max_input_length: 50
+train_steps: 1000000
+eval_steps: 100
+save_summary_steps: 1000
+save_checkpoints_steps: 2000
+n_checkpoints: 20
+batch_size: 2048
+
+learning_rate: 0.2
+
+lr_decay: noam
+lr_warmup_steps: 4000
+
+clip_gradients: null
+
+optimizer: adam
+adam_beta1: 0.9
+adam_beta2: 0.997
+adam_epsilon: 0.000000001
+
+source_vocab_file: ~/data/
+target_vocab_file: ~/data/
+source_train_file: ~/data/ain.sp
+target_train_file: ~/data/ain.sp
+source_eval_file:  ~/data/lid.sp
+target_eval_file:  ~/data/lid.sp
+record_train_file: ~/data/cords 
+record_eval_file:  ~/data/cords
+
+
+# predict
+predict_batch_size: 1
+max_decode_length: 100
