@@ -51,14 +51,14 @@ adam_beta1: 0.9
 adam_beta2: 0.997
 adam_epsilon: 0.000000001
 
-source_vocab_file: ~/data/
-target_vocab_file: ~/data/
-source_train_file: ~/data/ain.sp
-target_train_file: ~/data/ain.sp
-source_eval_file:  ~/data/lid.sp
-target_eval_file:  ~/data/lid.sp
-record_train_file: ~/data/cords 
-record_eval_file:  ~/data/cords
+source_vocab_file: ~
+target_vocab_file: ~
+source_train_file: ~
+target_train_file: ~
+source_eval_file:  ~
+target_eval_file:  ~
+record_train_file: ~
+record_eval_file:  ~
 
 
 # predict

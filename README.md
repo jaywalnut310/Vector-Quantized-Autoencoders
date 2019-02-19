@@ -1,6 +1,8 @@
 # Vector Quantized Autoencoders
-Tensorflow implementation of [Theory and Experiments on Vector Quantized Autoencoders](https://arxiv.org/abs/1805.11063)
+Tensorflow implementation of [Theory and Experiments on Vector Quantized Autoencoders](https://arxiv.org/abs/1805.11063).
+
 By modifying configurations, you can use VQVAE instead of soft EM version VQA (modify bottleneck_kind to vq in config.yml)
+
 For more details, please refer the paper or its precedent paper ([Neural Discrete Representation Learning](https://arxiv.org/abs/1711.00937)).
 
 * Many codes of this repository are drawn from [tensor2tensor](https://github.com/tensorflow/tensor2tensor) library.
@@ -28,15 +30,21 @@ If you want to change hparams, then you can do it by choosing one of two options
 
 ## WMT14-ENDE (Distilled Data)
 I got 24.9 BLEU score. It's quite not bad, but still worse than the paper's result.
+
 I trained with configurations as below:
 * 4 V100 GPUs
 * batch_size: 8192 in config.yml
 * Distilled data from [Transformer of OpenNMT-tf](https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt)
 * averages weights of recent checkpoints using avg_checkpoints.py
+
 It took about 13 days to run 1M train steps.
+
 In my experience, I figured more batch_size and number of gpus help to improve performance significantly.
+
 Thus, there is a possiblility to get further improvements with 8 gpus training. 
+
 If you have enough gpus, please let me know the result.
+
 Additionally, if there is any error, mis-implementation or mis-configuration, please let me know :).
 
 ### Data Preparation
