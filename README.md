@@ -34,7 +34,7 @@ I got 24.9 BLEU score. It's quite not bad, but still worse than the paper's resu
 I trained with configurations as below:
 * 4 V100 GPUs
 * batch_size: 8192 in config.yml
-* Distilled data from [Transformer of OpenNMT-tf](https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt)
+* Knowledge Distillation from [Transformer of OpenNMT-tf](https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt)
 * averages weights of recent checkpoints using avg_checkpoints.py
 
 It took about 13 days to run 1M train steps.
@@ -46,6 +46,7 @@ Thus, there is a possiblility to get further improvements with 8 gpus training.
 If you have enough gpus, please let me know the result.
 
 Additionally, if there is any error, mis-implementation or mis-configuration, please let me know :).
+
 
 ### Data Preparation
 TK
