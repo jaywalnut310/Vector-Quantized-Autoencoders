@@ -32,7 +32,7 @@ If you want to change hparams, then you can do it by choosing one of two options
 
 
 ## WMT14-ENDE (Distilled Data)
-I got 24.9 BLEU score. It's quite not bad, but still worse than the paper's result.
+I got 24.9 BLEU score. It's quite not that bad, but still worse than the paper's result.
 
 I trained with configurations as below:
 * 4 V100 GPUs
