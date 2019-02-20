@@ -51,15 +51,7 @@ Additionally, if there is any error, mis-implementation or mis-configuration, pl
 ### Data Preparation
 TK
 ```sh
-python generate_data.py --c \
-  source_vocab_file=/path/to/wmt14_ende_distill/wmtende.vocab \
-  target_vocab_file=/path/to/wmt14_ende_distill/wmtende.vocab \
-  source_train_file=/path/to/wmt14_ende_distill/train.en \
-  target_train_file=/path/to/wmt14_ende_distill/train.de \
-  source_eval_file=/path/to/wmt14_ende_distill/valid.en \
-  target_eval_file=/path/to/wmt14_ende_distill/valid.de \
-  record_train_file=/path/to/wmt_14_ende_distill/train.tfrecords \
-  record_eval_file=/path/to/wmt_14_ende_distill/valid.tfrecords
+python generate_data.py
 ```
 
 ### Test
