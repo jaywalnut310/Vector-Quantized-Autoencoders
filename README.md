@@ -10,6 +10,9 @@ For more details, please refer the paper or its precedent paper ([Neural Discret
 
 ## Training
 ```sh
+# 0. Prepare data
+# Please see "Data Preparation" section
+
 # 1. Create log directory
 mkdir /path/to/your-log-dir
 
