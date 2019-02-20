@@ -51,6 +51,7 @@ Additionally, if there is any error, mis-implementation or mis-configuration, pl
 ### Data Preparation
 TK
 ```sh
+# you can change filepaths using --c option optionally.
 python generate_data.py
 ```
 
