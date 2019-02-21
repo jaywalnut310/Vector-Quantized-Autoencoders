@@ -61,10 +61,15 @@ python generate_data.py
 ### Test
 TK
 ```sh
+# (Optional) Averaging checkpoints is mostly helpful to improve performance
+python avg_checkpoints.py --prefix=/path/to/your-log-dir --num_last_checkpoints=20
+
+# checkpoint config is optional
 python decode.py \
   --model_dir /path/to/your-log-dir \
   --predict_file /path/to/wmt14_ende_distill/test.en \
   --out_file out.txt
+  --checkpoint /tmp/averaged.ckpt-0
 
 spm_decode \
   --model=/path/to/OpenNMT-tf/scripts/wmt/wmtende.model \
