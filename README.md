@@ -54,7 +54,16 @@ Additionally, if there is any error, mis-implementation or mis-configuration, pl
 ### Data Preparation
 TK
 ```sh
-# you can change filepaths using --c option optionally.
+# you can change filepaths using --c config as below.
+# python generate_data.py --c \
+#   source_vocab_file=/path/to/my-data/vocab_src \
+#   target_vocab_file=/path/to/my-data/vocab_tgt \
+#   source_train_file=/path/to/my-data/train_src \
+#   target_train_file=/path/to/my-data/train_tgt \
+#   source_eval_file=/path/to/my-data/valid_src \
+#   target_eval_file=/path/to/my-data/valid_tgt \
+#   record_train_file=/path/to/my-data/train.tfrecords \
+#   record_eval_file=/path/to/my-data/valid.tfrecords
 python generate_data.py
 ```
 
