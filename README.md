@@ -23,7 +23,7 @@ It took about 13 days to run 1M train steps.
 
 In my experience, I figured more batch_size and number of gpus help to improve performance significantly.
 
-Thus, there is a possiblility to get further improvements with 8 gpus training. 
+Thus, there is a possiblility to get further improvements with 8 or more gpus training.
 
 If you have enough gpus, please let me know the result.
 
