@@ -8,28 +8,6 @@ For more details, please refer to the paper or its precedent paper ([Neural Disc
 * Many codes of this repository are drawn from [tensor2tensor](https://github.com/tensorflow/tensor2tensor) library.
 * As tensor2tensor is too big to understand at a glance, I draw some of their codes as short as possible.
 
-## Training
-```sh
-# 0. Prepare data
-# Please see "Data Preparation" section
-
-# 1. Create log directory
-mkdir /path/to/your-log-dir
-
-# 2. (Optional) Copy configs
-cp ./config.yml /path/to/your-log-dir
-
-# 3. Run training
-python train.py -m /path/to/your-log-dir
-```
-
-If you want to change hparams, then you can do it by choosing one of two options.
-* modify [config.yml](config.yml)
-* add arguments as below:
-  ```sh
-  python train.py -m /path/to/your-log-dir --c hidden_size=512 num_heads=8
-  ```
-
 
 ## WMT14-ENDE (Distilled Data)
 I got 24.9 BLEU score. It's quite not that bad, but still worse than the paper's result.
@@ -67,6 +45,25 @@ TK
 #   record_eval_file=/path/to/your-data-dir/valid.tfrecords
 python generate_data.py
 ```
+
+### Training
+```sh
+# 1. Create log directory
+mkdir /path/to/your-log-dir
+
+# 2. (Optional) Copy configs
+cp ./config.yml /path/to/your-log-dir
+
+# 3. Run training
+python train.py -m /path/to/your-log-dir
+```
+
+If you want to change hparams, then you can do it by choosing one of two options.
+* modify [config.yml](config.yml)
+* add arguments as below:
+  ```sh
+  python train.py -m /path/to/your-log-dir --c hidden_size=512 num_heads=8
+  ```
 
 ### Test
 TK
