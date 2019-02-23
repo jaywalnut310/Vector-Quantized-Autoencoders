@@ -57,14 +57,14 @@ TK
 # You can change filepaths by modifying 'config.yml'
 # or you can change filepaths using --c config as below.
 # python generate_data.py --c \
-#   source_vocab_file=/path/to/my-data/vocab_src \
-#   target_vocab_file=/path/to/my-data/vocab_tgt \
-#   source_train_file=/path/to/my-data/train_src \
-#   target_train_file=/path/to/my-data/train_tgt \
-#   source_eval_file=/path/to/my-data/valid_src \
-#   target_eval_file=/path/to/my-data/valid_tgt \
-#   record_train_file=/path/to/my-data/train.tfrecords \
-#   record_eval_file=/path/to/my-data/valid.tfrecords
+#   source_vocab_file=/path/to/your-data-dir/vocab_src \
+#   target_vocab_file=/path/to/your-data-dir/vocab_tgt \
+#   source_train_file=/path/to/your-data-dir/train_src \
+#   target_train_file=/path/to/your-data-dir/train_tgt \
+#   source_eval_file=/path/to/your-data-dir/valid_src \
+#   target_eval_file=/path/to/your-data-dir/valid_tgt \
+#   record_train_file=/path/to/your-data-dir/train.tfrecords \
+#   record_eval_file=/path/to/your-data-dir/valid.tfrecords
 python generate_data.py
 ```
 
