@@ -7,6 +7,7 @@ For more details, please refer to the paper or its precedent paper ([Neural Disc
 
 * Many codes of this repository are drawn from [tensor2tensor](https://github.com/tensorflow/tensor2tensor) library.
 * As tensor2tensor is too big to understand at a glance, I draw some of their codes as short as possible.
+* All works are done in TensorFlow 1.12.
 
 
 ## WMT14-ENDE (Distilled Data)
