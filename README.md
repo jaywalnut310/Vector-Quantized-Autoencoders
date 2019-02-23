@@ -95,7 +95,7 @@ BLEU = 24.89, 57.6/31.2/19.1/12.2 (BP=0.978, ratio=0.978, hyp_len=63093, ref_len
 
 #### Prediction samples
 | Source        | Prediction    | Ground Truth  |
-| ------------- |:-------------:| -----:|
+| ------------- | ------------- | ------------- |
 | Gutach: Increased safety for pedestrians | Guts: Mehr Sicherheit für Fußgänger | Gutach: Noch mehr Sicherheit für Fußgänger |
 | They are not even 100 metres apart: On Tuesday, the new B 33 pedestrian lights in Dorfparkplatz in Gutach became operational - within view of the existing Town Hall traffic lights. | Sie sind nicht nicht einmal 100 Meter voneinander entfernt: Am Dienstag wurden die neuen Fußgängerzonen B 33 am Dorfparkplatz in Gutach im Hinblick auf die bestehende Ampel des Rathauses in Betrieb genommen. | Sie stehen keine 100 Meter voneinander entfernt: Am Dienstag ist in Gutach die neue B 33-Fußgängerampel am Dorfparkplatz in Betrieb genommen worden - in Sichtweite der älteren Rathausampel. |
 | Two sets of lights so close to one another: intentional or just a silly error? | Zwei Lichtsätze so nah aneinander: absichtlich oder nur ein dummer Fehler? | Zwei Anlagen so nah beieinander: Absicht oder Schildbürgerstreich? |
