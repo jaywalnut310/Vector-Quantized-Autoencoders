@@ -101,5 +101,5 @@ BLEU = 24.89, 57.6/31.2/19.1/12.2 (BP=0.978, ratio=0.978, hyp_len=63093, ref_len
 | Two sets of lights so close to one another: intentional or just a silly error? | Zwei Lichtsätze so nah aneinander: absichtlich oder nur ein dummer Fehler? | Zwei Anlagen so nah beieinander: Absicht oder Schildbürgerstreich? |
 
 The above samples are just the first 3 sentences in the test set.
-More samples can be found in '[sources.txt](resources/sources.txt)', '[prediction.txt](resources/prediction.txt)' and '[ground_truth.txt](resources/ground_truth.txt)'.
+More samples can be found in '[source.txt](resources/source.txt)', '[prediction.txt](resources/prediction.txt)' and '[ground_truth.txt](resources/ground_truth.txt)'.
 
