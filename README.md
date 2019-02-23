@@ -1,7 +1,7 @@
 # Vector Quantized Autoencoders
 Tensorflow implementation of [Theory and Experiments on Vector Quantized Autoencoders](https://arxiv.org/abs/1805.11063).
 
-By modifying configurations, you can use VQVAE instead of soft EM version VQA (modify bottleneck_kind to vq in '[config.yml](config.yml)')
+By modifying configurations, you can use VQVAE instead of soft EM version VQA (modify bottleneck_kind to vq in [config.yml](config.yml))
 
 For more details, please refer to the paper or its precedent paper ([Neural Discrete Representation Learning](https://arxiv.org/abs/1711.00937)).
 
@@ -24,7 +24,7 @@ python train.py -m /path/to/your-log-dir
 ```
 
 If you want to change hparams, then you can do it by choosing one of two options.
-* modify '[config.yml](config.yml)'
+* modify [config.yml](config.yml)
 * add arguments as below:
   ```sh
   python train.py -m /path/to/your-log-dir --c hidden_size=512 num_heads=8
@@ -38,7 +38,7 @@ I trained with configurations as below:
 * 4 V100 GPUs
 * batch_size: 8192
 * Knowledge Distillation from [Transformer of OpenNMT-tf](https://github.com/OpenNMT/OpenNMT-tf/tree/master/scripts/wmt)
-* averages weights of recent checkpoints using [avg_checkpoints.py]('avg_checkpoints.py')
+* averages weights of recent checkpoints using [avg_checkpoints.py](avg_checkpoints.py)
 
 It took about 13 days to run 1M train steps.
 
@@ -101,5 +101,5 @@ BLEU = 24.89, 57.6/31.2/19.1/12.2 (BP=0.978, ratio=0.978, hyp_len=63093, ref_len
 | Two sets of lights so close to one another: intentional or just a silly error? | Zwei Lichtsätze so nah aneinander: absichtlich oder nur ein dummer Fehler? | Zwei Anlagen so nah beieinander: Absicht oder Schildbürgerstreich? |
 
 The above samples are just the first 3 sentences in the test set.
-More samples can be found in '[source.txt](resources/source.txt)', '[prediction.txt](resources/prediction.txt)' and '[ground_truth.txt](resources/ground_truth.txt)'.
+More samples can be found in [source.txt](resources/source.txt), [prediction.txt](resources/prediction.txt) and [ground_truth.txt](resources/ground_truth.txt).
 
