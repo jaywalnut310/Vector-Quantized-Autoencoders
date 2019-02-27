@@ -1,4 +1,8 @@
+
 # Vector Quantized Autoencoders
+
+## WARNING: README is not written well currently. I'll clean it in a few weeks!
+
 Tensorflow implementation of [Theory and Experiments on Vector Quantized Autoencoders](https://arxiv.org/abs/1805.11063).
 
 By modifying configurations, you can use VQVAE instead of soft EM version VQA (modify bottleneck_kind to vq in [config.yml](config.yml))
